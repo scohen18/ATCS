@@ -49,7 +49,7 @@ public class postFixCalculator {
             System.out.println(numbers[i]);
         }
 
-        
+
 
     }
 }
