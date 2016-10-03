@@ -1,12 +1,21 @@
+import java.util.*;
+
 public class BSTDriver{
 	public static void main(String [] args)
 	{
-		BinarySearchTree<Integer, String> b= new BinarySearchTree<Integer, String>();
+		Random r = new Random();
+		BinarySearchTree<Integer, Integer> b= new BinarySearchTree<Integer, Integer>();
 
-		b.put(8,"eight");
-		b.put(10,"ten");
-		b.put(4,"four");
+
+		for(int i = 0; i < 5000; i ++)
+		{
+
+			b.put(i,r.nextInt(1000));
+		}
+
 
 		System.out.println(b.get(8));
+
+		System.out.println(b.toString());
 	}
 }
